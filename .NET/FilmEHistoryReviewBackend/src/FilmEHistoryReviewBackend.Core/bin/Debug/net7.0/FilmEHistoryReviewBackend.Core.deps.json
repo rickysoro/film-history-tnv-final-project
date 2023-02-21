@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "FilmEHistoryReviewBackend.Core/1.0.0": {
+        "runtime": {
+          "FilmEHistoryReviewBackend.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FilmEHistoryReviewBackend.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
