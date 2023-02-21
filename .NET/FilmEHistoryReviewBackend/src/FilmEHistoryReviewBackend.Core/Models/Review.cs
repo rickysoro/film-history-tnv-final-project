@@ -14,6 +14,7 @@ namespace FilmEHistoryReviewBackend.Core.Models
         private int _movie_id;
         private string _comment;
 
+        // Definisco il costruttore di Review   
         public Review(int id, int user_id, int movie_id, string comment) 
         {
             _id = id;
@@ -22,6 +23,7 @@ namespace FilmEHistoryReviewBackend.Core.Models
             _comment = comment;
         }
 
+        // Definisco le properties di Review per tutti i suoi attributi
         public int Id 
         { 
             get { return _id; } 

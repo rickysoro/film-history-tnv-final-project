@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace FilmEHistoryReviewBackend.Core.Service
 {
+    // Definisco l'interfaccia IStorageService che dichiarerà i metodi per le funzionalità CRUD dell'applicazione
     public interface IStorageService
     {
         public Review InsertReview(int userId, int movieId, string comment);
