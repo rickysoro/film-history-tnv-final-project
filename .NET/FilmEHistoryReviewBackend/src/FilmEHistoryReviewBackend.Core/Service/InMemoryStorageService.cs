@@ -13,7 +13,7 @@ namespace FilmEHistoryReviewBackend.Core.Service
     public class InMemoryStorageService : IStorageService
     {
         // Dichiaro una lista che dovrà contenere le review
-        public List<Review> _reviews;
+        private List<Review> _reviews;
 
         // Definisco il costruttore della classe
         public InMemoryStorageService()
