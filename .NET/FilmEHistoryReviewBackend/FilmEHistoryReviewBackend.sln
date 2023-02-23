@@ -5,19 +5,18 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{28D72CF5-70A9-4DF4-86FC-6F18CD10F865}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmEHistoryReviewBackend.Core", "src\FilmEHistoryReviewBackend.Core\FilmEHistoryReviewBackend.Core.csproj", "{3AD78FCC-03A7-4046-A50C-2AB92A027BB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmEHistoryReviewBackend.Core", "src\FilmEHistoryReviewBackend.Core\FilmEHistoryReviewBackend.Core.csproj", "{3AD78FCC-03A7-4046-A50C-2AB92A027BB7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E705C3B9-CB77-4CCB-AC71-0153C1746D5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmEHistoryReviewBackend.Core.Tests", "test\FilmEHistoryReviewBackend.Core.Tests\FilmEHistoryReviewBackend.Core.Tests.csproj", "{F74A00A1-C63B-4B88-B8AC-F6B662DC003B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmEHistoryReviewBackend.Core.Tests", "test\FilmEHistoryReviewBackend.Core.Tests\FilmEHistoryReviewBackend.Core.Tests.csproj", "{F74A00A1-C63B-4B88-B8AC-F6B662DC003B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmEHistoryReviewBackend.RestAPI", "src\FilmEHistoryReviewBackend.RestAPI\FilmEHistoryReviewBackend.RestAPI.csproj", "{A72DAE76-37D8-4DE0-8955-20D6AABBC2B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{3AD78FCC-03A7-4046-A50C-2AB92A027BB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -28,9 +27,20 @@ Global
 		{F74A00A1-C63B-4B88-B8AC-F6B662DC003B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F74A00A1-C63B-4B88-B8AC-F6B662DC003B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F74A00A1-C63B-4B88-B8AC-F6B662DC003B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A72DAE76-37D8-4DE0-8955-20D6AABBC2B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A72DAE76-37D8-4DE0-8955-20D6AABBC2B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A72DAE76-37D8-4DE0-8955-20D6AABBC2B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A72DAE76-37D8-4DE0-8955-20D6AABBC2B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3AD78FCC-03A7-4046-A50C-2AB92A027BB7} = {28D72CF5-70A9-4DF4-86FC-6F18CD10F865}
 		{F74A00A1-C63B-4B88-B8AC-F6B662DC003B} = {E705C3B9-CB77-4CCB-AC71-0153C1746D5E}
+		{A72DAE76-37D8-4DE0-8955-20D6AABBC2B4} = {28D72CF5-70A9-4DF4-86FC-6F18CD10F865}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0DFCD804-1E20-45FC-87A3-D1052C7D6A01}
 	EndGlobalSection
 EndGlobal
