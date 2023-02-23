@@ -14,6 +14,6 @@ namespace FilmEHistoryReviewBackend.RestAPI.Model
         public int MovieId { get; set; }
 
         [DisplayName("comment")]
-        public int Comment { get; set; }
+        public string Comment { get; set; }
     }
 }
