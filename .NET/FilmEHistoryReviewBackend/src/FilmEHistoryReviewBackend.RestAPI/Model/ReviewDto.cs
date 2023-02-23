@@ -1,0 +1,19 @@
+﻿using System.ComponentModel;
+
+namespace FilmEHistoryReviewBackend.RestAPI.Model
+{
+    public class ReviewDto
+    {
+        [DisplayName("id")]
+        public int Id { get; set; }
+
+        [DisplayName("user_id")]
+        public int UserId { get; set; }
+
+        [DisplayName("movie_id")]
+        public int MovieId { get; set; }
+
+        [DisplayName("comment")]
+        public int Comment { get; set; }
+    }
+}
