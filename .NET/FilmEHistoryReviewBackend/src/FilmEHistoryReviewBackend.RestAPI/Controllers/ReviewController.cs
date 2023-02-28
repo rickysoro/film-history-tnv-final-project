@@ -12,13 +12,11 @@ namespace FilmEHistoryReviewBackend.RestAPI.Controllers
     [Route("reviews")]
     public class ReviewController : ControllerBase
     {
-        private IStorageService _iStorageService;
         private ReviewManager _reviewManager;
 
-        public ReviewController()
+        public ReviewController(ReviewManager reviewManager)
         {
-            _iStorageService = new InMemoryStorageService();
-            _reviewManager = new ReviewManager(_iStorageService);
+            _reviewManager = reviewManager;
         }
 
         [HttpGet]
