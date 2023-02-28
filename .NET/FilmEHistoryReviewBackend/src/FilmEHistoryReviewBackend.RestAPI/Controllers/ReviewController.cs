@@ -39,5 +39,20 @@ namespace FilmEHistoryReviewBackend.RestAPI.Controllers
                 return NotFound(new ErrorResponse(exception.Message));
             }
         }
+
+        [HttpPost]
+        public ActionResult<ReviewDto> InsertReview([FromBody] ReviewRequest body)
+        {
+            try
+            {
+                var reviewToInsert = _reviewManager.InsertReview(body.UserId, body.MovieId, body.Comment);
+                var uri = $"/reviews/{reviewToInsert.Id}";
+                return Created(uri, ReviewDtoMapper.From(reviewToInsert));
+            }
+            catch (TextTooShortException exception)
+            {
+                return BadRequest(new ErrorResponse(exception.Message));
+            }
+        }
     }
 }
