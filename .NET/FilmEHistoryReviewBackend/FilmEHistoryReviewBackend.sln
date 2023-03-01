@@ -11,7 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E705C3B9-C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmEHistoryReviewBackend.Core.Tests", "test\FilmEHistoryReviewBackend.Core.Tests\FilmEHistoryReviewBackend.Core.Tests.csproj", "{F74A00A1-C63B-4B88-B8AC-F6B662DC003B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmEHistoryReviewBackend.RestAPI", "src\FilmEHistoryReviewBackend.RestAPI\FilmEHistoryReviewBackend.RestAPI.csproj", "{A72DAE76-37D8-4DE0-8955-20D6AABBC2B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmEHistoryReviewBackend.RestAPI", "src\FilmEHistoryReviewBackend.RestAPI\FilmEHistoryReviewBackend.RestAPI.csproj", "{A72DAE76-37D8-4DE0-8955-20D6AABBC2B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmEHistoryReviewBackend.DB", "src\FilmEHistoryReviewBackend.DB\FilmEHistoryReviewBackend.DB.csproj", "{9BA4F325-4E27-4533-9CE9-3F85486EB735}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{A72DAE76-37D8-4DE0-8955-20D6AABBC2B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A72DAE76-37D8-4DE0-8955-20D6AABBC2B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A72DAE76-37D8-4DE0-8955-20D6AABBC2B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BA4F325-4E27-4533-9CE9-3F85486EB735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BA4F325-4E27-4533-9CE9-3F85486EB735}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BA4F325-4E27-4533-9CE9-3F85486EB735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BA4F325-4E27-4533-9CE9-3F85486EB735}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 		{3AD78FCC-03A7-4046-A50C-2AB92A027BB7} = {28D72CF5-70A9-4DF4-86FC-6F18CD10F865}
 		{F74A00A1-C63B-4B88-B8AC-F6B662DC003B} = {E705C3B9-CB77-4CCB-AC71-0153C1746D5E}
 		{A72DAE76-37D8-4DE0-8955-20D6AABBC2B4} = {28D72CF5-70A9-4DF4-86FC-6F18CD10F865}
+		{9BA4F325-4E27-4533-9CE9-3F85486EB735} = {28D72CF5-70A9-4DF4-86FC-6F18CD10F865}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0DFCD804-1E20-45FC-87A3-D1052C7D6A01}

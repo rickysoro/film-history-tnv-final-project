@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using FilmEHistoryReviewBackend.DB.Model;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +10,7 @@ namespace FilmEHistoryReviewBackend.DB
 {
     public class ApplicationContext : DbContext
     {
-        public ApplicationContext() 
-        {
-        }
+        public DbSet<ReviewEntity> Reviews { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
