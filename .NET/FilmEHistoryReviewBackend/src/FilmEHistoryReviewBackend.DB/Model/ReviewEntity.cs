@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FilmEHistoryReviewBackend.DB.Model
 {
-    [Table("review")]
+    [Table("review_backend")]
     public class ReviewEntity
     {
         [Column("id"), Key]

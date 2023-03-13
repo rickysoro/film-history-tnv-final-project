@@ -1,0 +1,17 @@
+C:\Users\A\Documents\Corsi\TNV\Progetti\NuovoProgettoFinale\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.DB\bin\Debug\net7.0\FilmEHistoryReviewBackend.DB.deps.json
+C:\Users\A\Documents\Corsi\TNV\Progetti\NuovoProgettoFinale\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.DB\bin\Debug\net7.0\FilmEHistoryReviewBackend.DB.runtimeconfig.json
+C:\Users\A\Documents\Corsi\TNV\Progetti\NuovoProgettoFinale\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.DB\bin\Debug\net7.0\FilmEHistoryReviewBackend.DB.dll
+C:\Users\A\Documents\Corsi\TNV\Progetti\NuovoProgettoFinale\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.DB\bin\Debug\net7.0\FilmEHistoryReviewBackend.DB.pdb
+C:\Users\A\Documents\Corsi\TNV\Progetti\NuovoProgettoFinale\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.DB\bin\Debug\net7.0\FilmEHistoryReviewBackend.Core.dll
+C:\Users\A\Documents\Corsi\TNV\Progetti\NuovoProgettoFinale\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.DB\bin\Debug\net7.0\FilmEHistoryReviewBackend.Core.pdb
+C:\Users\A\Documents\Corsi\TNV\Progetti\NuovoProgettoFinale\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.DB\obj\Debug\net7.0\FilmEHistoryReviewBackend.DB.csproj.AssemblyReference.cache
+C:\Users\A\Documents\Corsi\TNV\Progetti\NuovoProgettoFinale\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.DB\obj\Debug\net7.0\FilmEHistoryReviewBackend.DB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A\Documents\Corsi\TNV\Progetti\NuovoProgettoFinale\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.DB\obj\Debug\net7.0\FilmEHistoryReviewBackend.DB.AssemblyInfoInputs.cache
+C:\Users\A\Documents\Corsi\TNV\Progetti\NuovoProgettoFinale\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.DB\obj\Debug\net7.0\FilmEHistoryReviewBackend.DB.AssemblyInfo.cs
+C:\Users\A\Documents\Corsi\TNV\Progetti\NuovoProgettoFinale\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.DB\obj\Debug\net7.0\FilmEHistoryReviewBackend.DB.csproj.CoreCompileInputs.cache
+C:\Users\A\Documents\Corsi\TNV\Progetti\NuovoProgettoFinale\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.DB\obj\Debug\net7.0\FilmEHistoryReviewBackend.DB.csproj.CopyComplete
+C:\Users\A\Documents\Corsi\TNV\Progetti\NuovoProgettoFinale\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.DB\obj\Debug\net7.0\FilmEHistoryReviewBackend.DB.dll
+C:\Users\A\Documents\Corsi\TNV\Progetti\NuovoProgettoFinale\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.DB\obj\Debug\net7.0\refint\FilmEHistoryReviewBackend.DB.dll
+C:\Users\A\Documents\Corsi\TNV\Progetti\NuovoProgettoFinale\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.DB\obj\Debug\net7.0\FilmEHistoryReviewBackend.DB.pdb
+C:\Users\A\Documents\Corsi\TNV\Progetti\NuovoProgettoFinale\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.DB\obj\Debug\net7.0\FilmEHistoryReviewBackend.DB.genruntimeconfig.cache
+C:\Users\A\Documents\Corsi\TNV\Progetti\NuovoProgettoFinale\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.DB\obj\Debug\net7.0\ref\FilmEHistoryReviewBackend.DB.dll
