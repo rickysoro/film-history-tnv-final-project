@@ -1,5 +1,7 @@
 ﻿using FilmEHistoryReviewBackend.Core.Models;
 using FilmEHistoryReviewBackend.Core.Service;
+using FilmEHistoryReviewBackend.DB.Mapper;
+using FilmEHistoryReviewBackend.DB.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,7 +37,16 @@ namespace FilmEHistoryReviewBackend.DB
 
         public Review InsertReview(int userId, int movieId, string comment)
         {
-            throw new NotImplementedException();
+            var reviewToInsert = new ReviewEntity
+            {
+                UserId = userId,
+                MovieId = movieId,
+                Comment = comment
+            };
+
+            _context.Reviews.Add(reviewToInsert);
+            _context.SaveChanges();
+            return ReviewEntityMapper.From(reviewToInsert);
         }
 
         public Review UpdateReview(int id, string comment)
