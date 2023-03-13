@@ -30,7 +30,7 @@ namespace FilmEHistoryReviewBackend.DB
 
         public List<Review> GetAllReviews()
         {
-            throw new NotImplementedException();
+            return _context.Reviews.Select(reviewEntry => ReviewEntityMapper.From(reviewEntry)).ToList();
         }
 
         public Review GetReviewById(int id)
