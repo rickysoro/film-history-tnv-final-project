@@ -1,4 +1,5 @@
-﻿using FilmEHistoryReviewBackend.Core.Models;
+﻿using FilmEHistoryReviewBackend.Core.Exceptions;
+using FilmEHistoryReviewBackend.Core.Models;
 using FilmEHistoryReviewBackend.Core.Service;
 using FilmEHistoryReviewBackend.DB.Mapper;
 using FilmEHistoryReviewBackend.DB.Model;
@@ -22,7 +23,9 @@ namespace FilmEHistoryReviewBackend.DB
 
         public void DeleteReview(int id)
         {
-            throw new NotImplementedException();
+            var reviewToDelete = GetReviewOrFail(id);
+            _context.Reviews.Remove(reviewToDelete);
+            _context.SaveChanges();
         }
 
         public List<Review> GetAllReviews()
@@ -52,6 +55,14 @@ namespace FilmEHistoryReviewBackend.DB
         public Review UpdateReview(int id, string comment)
         {
             throw new NotImplementedException();
+        }
+
+        private ReviewEntity GetReviewOrFail(int reviewId)
+        {
+            var reviewToFind = _context.Reviews.Find(reviewId);
+
+            if (reviewToFind == null) throw new ReviewNotFoundException(reviewId);
+            return reviewToFind;
         }
     }
 }
