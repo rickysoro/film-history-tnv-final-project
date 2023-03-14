@@ -2,6 +2,7 @@
 
 namespace FilmEHistoryReviewBackend.RestAPI.Model
 {
+    // Implemento una classe in grado di filtrare le informazioni dell'oggetto che voglio mostrare all'esterno
     public class ReviewDto
     {
         [DisplayName("id")]
