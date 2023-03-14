@@ -1,6 +1,7 @@
 
 using FilmEHistoryReviewBackend.Core.Manager;
 using FilmEHistoryReviewBackend.Core.Service;
+using FilmEHistoryReviewBackend.DB;
 
 namespace FilmEHistoryReviewBackend.RestAPI
 {
@@ -17,7 +18,7 @@ namespace FilmEHistoryReviewBackend.RestAPI
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            builder.Services.AddSingleton<IStorageService, InMemoryStorageService>();
+            builder.Services.AddSingleton<IStorageService, MySqlStorageService>();
             builder.Services.AddSingleton<ReviewManager>();
 
             var app = builder.Build();
