@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace FilmEHistoryReviewBackend.DB.Model
 {
+    // Implemento la classe che rappresenterà a codice la tabella review
     [Table("review_backend")]
     public class ReviewEntity
     {
