@@ -35,7 +35,8 @@ namespace FilmEHistoryReviewBackend.DB
 
         public Review GetReviewById(int id)
         {
-            throw new NotImplementedException();
+            var reviewToGet = GetReviewOrFail(id);
+            return ReviewEntityMapper.From(reviewToGet);
         }
 
         public Review InsertReview(int userId, int movieId, string comment)
