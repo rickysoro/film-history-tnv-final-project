@@ -55,7 +55,10 @@ namespace FilmEHistoryReviewBackend.DB
 
         public Review UpdateReview(int id, string comment)
         {
-            throw new NotImplementedException();
+            var reviewToUpdate = GetReviewOrFail(id);
+            reviewToUpdate.Comment = comment;
+            _context.SaveChanges();
+            return ReviewEntityMapper.From(reviewToUpdate);
         }
 
         private ReviewEntity GetReviewOrFail(int reviewId)
