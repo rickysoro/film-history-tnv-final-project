@@ -2,6 +2,7 @@
 
 namespace FilmEHistoryReviewBackend.RestAPI.Model
 {
+    // Definisco una classe che mi consente di identificare gli errori
     public class ErrorResponse
     {
         [DisplayName("error_message")]
