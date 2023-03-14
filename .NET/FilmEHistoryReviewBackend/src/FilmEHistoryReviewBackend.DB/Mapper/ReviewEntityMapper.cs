@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace FilmEHistoryReviewBackend.DB.Mapper
 {
+    // Implemento una classe che mi permetta di tradurre le righe della mia tabella in attributi del mio oggetto
     public class ReviewEntityMapper
     {
         public static Review From(ReviewEntity entity)
