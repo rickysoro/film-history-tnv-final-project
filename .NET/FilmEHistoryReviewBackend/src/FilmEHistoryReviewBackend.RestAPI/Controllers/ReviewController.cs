@@ -52,5 +52,23 @@ namespace FilmEHistoryReviewBackend.RestAPI.Controllers
                 return BadRequest(new ErrorResponse(exception.Message));
             }
         }
+
+        [HttpPut]
+        public ActionResult<ReviewDto> UpdateReview(int id, string comment)
+        {
+            try
+            {
+                var reviewToUpdate = _reviewManager.UpdateReview(id, comment);
+                return Ok(ReviewDtoMapper.From(reviewToUpdate));
+            }
+            catch (ReviewNotFoundException notFoundException)
+            {
+                return NotFound(new ErrorResponse(notFoundException.Message));
+            }
+            catch (TextTooShortException tooShortException) 
+            {
+                return BadRequest(new ErrorResponse(tooShortException.Message));
+            }
+        }
     }
 }
