@@ -5,6 +5,7 @@ using FilmEHistoryReviewBackend.Core.Service;
 using FilmEHistoryReviewBackend.RestAPI.Mapper;
 using FilmEHistoryReviewBackend.RestAPI.Model;
 using Microsoft.AspNetCore.Mvc;
+using System.Runtime.CompilerServices;
 
 namespace FilmEHistoryReviewBackend.RestAPI.Controllers
 {
@@ -54,7 +55,8 @@ namespace FilmEHistoryReviewBackend.RestAPI.Controllers
         }
 
         [HttpPut]
-        public ActionResult<ReviewDto> UpdateReview(int id, string comment)
+        [Route("/{review-id}")]
+        public ActionResult<ReviewDto> UpdateReview([FromRoute(Name = "review-id")] int id, string comment)
         {
             try
             {
@@ -65,9 +67,24 @@ namespace FilmEHistoryReviewBackend.RestAPI.Controllers
             {
                 return NotFound(new ErrorResponse(notFoundException.Message));
             }
-            catch (TextTooShortException tooShortException) 
+            catch (TextTooShortException tooShortException)
             {
                 return BadRequest(new ErrorResponse(tooShortException.Message));
+            }
+        }
+
+        [HttpDelete]
+        [Route("/{review-id}")]
+        public ActionResult<bool> DeleteReview([FromRoute(Name = "review-id")] int id)
+        {
+            try 
+            {
+                _reviewManager.DeleteReview(id);
+                return Ok(true);
+            }
+            catch (ReviewNotFoundException exception)
+            {
+                return NotFound(new ErrorResponse(exception.Message));
             }
         }
     }
