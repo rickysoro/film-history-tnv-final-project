@@ -9,21 +9,26 @@ using System.Runtime.CompilerServices;
 
 namespace FilmEHistoryReviewBackend.RestAPI.Controllers
 {
+    // Implemento la classe che mi permette di esporre le chiamate Api della mia applicazione. La classe dovrà estendere la classe ControllerBase
     [ApiController]
     [Route("reviews")]
     public class ReviewController : ControllerBase
     {
+        // Dichiaro una variabile di tipi ReviewsManage
         private ReviewManager _reviewManager;
 
+        // Definisco il costruttore nel quale inietto il manager
         public ReviewController(ReviewManager reviewManager)
         {
             _reviewManager = reviewManager;
         }
 
+        // Implemento il metodo che visualizza a schermo tutte le review. Il metodo rende codice 200
         [HttpGet]
         public ActionResult<List<ReviewDto>> GetAllReviews() =>
             Ok(_reviewManager.GetAllReviews().Select(review => ReviewDtoMapper.From(review)).ToList());
 
+        // Implemento il metodo che visualizza a schermo una review per id. Il metodo gestisce un'eccezione e restituisce un ReviewDto con codice 200
         [HttpGet]
         [Route("/{review-id}")]
         public ActionResult<ReviewDto> GetReviewById([FromRoute(Name = "review-id")] int id)
@@ -39,6 +44,8 @@ namespace FilmEHistoryReviewBackend.RestAPI.Controllers
             }
         }
 
+        /*** Implemento il metodo per l'inserimento di una nuova review. Il metodo gestisce un'eccezione, chiama il metodo InsertReview, crea un nuovo uri
+         * e lo restituisce insieme a un oggetto ReviewDto con codice 201 ***/
         [HttpPost]
         public ActionResult<ReviewDto> InsertReview([FromBody] ReviewRequest body)
         {
@@ -54,6 +61,8 @@ namespace FilmEHistoryReviewBackend.RestAPI.Controllers
             }
         }
 
+        /*** Implemento il metodo per l'aggiornamento di una review. Il metodo gestisce due eccezioni (commento non trovato e testo troppo corto), 
+         * chiama la UpdateReview e restituisce un oggetto ReviewDto con codice 200 ***/
         [HttpPut]
         [Route("/{review-id}")]
         public ActionResult<ReviewDto> UpdateReview([FromRoute(Name = "review-id")] int id, string comment)
@@ -73,6 +82,8 @@ namespace FilmEHistoryReviewBackend.RestAPI.Controllers
             }
         }
 
+        /*** Implemento il metodo per la cancellazione di una review. Il metodo chiama la DeleteReview e gestice l'eccezione relativa al commento
+        * non trovato. Restituisce true se la cancellazione va a buon fine ***/
         [HttpDelete]
         [Route("/{review-id}")]
         public ActionResult<bool> DeleteReview([FromRoute(Name = "review-id")] int id)
