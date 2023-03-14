@@ -2,6 +2,7 @@
 
 namespace FilmEHistoryReviewBackend.RestAPI.Model
 {
+    // Implemento una classe che mi permetta di vedere le sole informazioni che l'utente trasmette attraverso l'applicazione
     public class ReviewRequest
     {
         [DisplayName("user_id")]
